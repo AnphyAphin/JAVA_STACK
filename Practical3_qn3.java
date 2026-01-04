@@ -42,5 +42,6 @@ public class Practical3_qn3 {
         System.out.println(UsingForLoop.SolveByFor(number));
         System.out.println(UsingWhileLoop.SolveByWhile(number));
         System.out.println(UsingDoWhileLoop.SolveByDoWhile(number));
+        scanner.close();
     }
 }
