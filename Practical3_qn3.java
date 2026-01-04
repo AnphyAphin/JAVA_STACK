@@ -1,6 +1,6 @@
-import java.util.*;
+import java.util.Scanner;
 
-public class Practical3_qn3 {
+class UsingForLoop {
     public static int SolveByFor(int n) {
         int fact = 1;
         for (int i = 1; i <= n; i++) {
@@ -8,7 +8,9 @@ public class Practical3_qn3 {
         }
         return fact;
     }
+}
 
+class UsingWhileLoop {
     public static int SolveByWhile(int n) {
         int fact = 1, i = 1;
         while (i <= n) {
@@ -17,7 +19,9 @@ public class Practical3_qn3 {
         }
         return fact;
     }
+}
 
+class UsingDoWhileLoop {
     public static int SolveByDoWhile(int n) {
         int fact = 1, i = 1;
         do {
@@ -26,14 +30,17 @@ public class Practical3_qn3 {
         } while (i <= n);
         return fact;
     }
+}
 
+public class Practical3_qn3 {
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your number: ");
         int number = scanner.nextInt();
 
-        System.out.println(SolveByFor(number));
-        System.out.println(SolveByWhile(number));
-        System.out.println(SolveByDoWhile(number));
+        System.out.println(UsingForLoop.SolveByFor(number));
+        System.out.println(UsingWhileLoop.SolveByWhile(number));
+        System.out.println(UsingDoWhileLoop.SolveByDoWhile(number));
     }
 }
