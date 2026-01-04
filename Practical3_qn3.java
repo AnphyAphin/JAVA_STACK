@@ -35,5 +35,7 @@ public class Practical3_qn3 {
         System.out.println(SolveByFor(number));
         System.out.println(SolveByWhile(number));
         System.out.println(SolveByDoWhile(number));
+
+        scanner.close();
     }
 }
